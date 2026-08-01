@@ -1,6 +1,6 @@
 package com.example.HW_JD_M14.crud;
 
-import com.example.HW_JD_M14.Note;
+import com.example.HW_JD_M14.entity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,14 +8,10 @@ import java.util.List;
 @Service
 public interface NoteService {
 
-    List<Note> listAll();
-
-    Note add(Note note);
-
+    List<entity.Note> listAll();
+    entity.Note add(entity.Note note);
     void deleteById(long id);
-
-    void update(Note note);
-
-    Note getById(long id);
+    void update(entity.Note note);
+    entity.Note getById(long id);
 
 }

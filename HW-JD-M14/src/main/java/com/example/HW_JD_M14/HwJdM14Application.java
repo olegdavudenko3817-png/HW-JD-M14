@@ -9,25 +9,22 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class HwJdM14Application {
-
     @Autowired
     private NoteService noteService;
 
     public static void main(String[] args) {
         SpringApplication.run(HwJdM14Application.class, args);
     }
-
     @PostConstruct
     public void init() {
-        Note note = new Note();
+        entity.Note note = new entity.Note();
         note.setTitle("Hello World");
         note.setContent("This is a note");
 
 
-        Note saved = noteService.add(note);
+        entity.Note saved = noteService.add(note);
 
         System.out.println("Created: " + saved.getId());
-
         System.out.println("All notes: " + noteService.listAll());
     }
 
