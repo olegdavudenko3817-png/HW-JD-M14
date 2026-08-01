@@ -1,6 +1,6 @@
-package com.example.HW_JD_M14.crud;
+package com.example.todo.crud;
 
-import com.example.HW_JD_M14.entity;
+import com.example.todo.entity.Note;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,16 +11,16 @@ import java.util.Map;
 @Service
 public class NoteServiceImpl implements NoteService {
 
-    private final Map<Long, entity.Note> noteMap = new HashMap<Long, entity.Note>();
+    private final Map<Long, Note> noteMap = new HashMap<Long, Note>();
     private long nextId = 1;
 
     @Override
-    public List<entity.Note> listAll() {
-        return new ArrayList<entity.Note>(noteMap.values());
+    public List<Note> listAll() {
+        return new ArrayList<Note>(noteMap.values());
     }
 
     @Override
-    public entity.Note add(entity.Note note) {
+    public Note add(Note note) {
         note.setId(nextId++);
         noteMap.put(note.getId(), note);
         return note;
@@ -35,8 +35,8 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public void update(entity.Note note) {
-        entity.Note foundNote = noteMap.get(note.getId());
+    public void update(Note note) {
+        Note foundNote = noteMap.get(note.getId());
 
         if (foundNote == null) {
             throw new RuntimeException("Note with id: " + note.getId() + " does not exist");
@@ -46,8 +46,8 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public entity.Note getById(long id) {
-        entity.Note note = noteMap.get(id);
+    public Note getById(long id) {
+        Note note = noteMap.get(id);
 
         if (note == null) {
             throw new RuntimeException("Note with id: " + id + " does not exist");

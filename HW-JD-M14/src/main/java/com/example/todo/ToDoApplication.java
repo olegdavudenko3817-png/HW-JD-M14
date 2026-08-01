@@ -1,6 +1,7 @@
-package com.example.HW_JD_M14;
+package com.example.todo;
 
-import com.example.HW_JD_M14.crud.NoteService;
+import com.example.todo.crud.NoteService;
+import com.example.todo.entity.Note;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,21 +9,22 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HwJdM14Application {
+public class ToDoApplication {
     @Autowired
     private NoteService noteService;
 
     public static void main(String[] args) {
-        SpringApplication.run(HwJdM14Application.class, args);
+        SpringApplication.run(ToDoApplication.class, args);
     }
+
     @PostConstruct
     public void init() {
-        entity.Note note = new entity.Note();
+        Note note = new Note();
         note.setTitle("Hello World");
         note.setContent("This is a note");
 
 
-        entity.Note saved = noteService.add(note);
+        Note saved = noteService.add(note);
 
         System.out.println("Created: " + saved.getId());
         System.out.println("All notes: " + noteService.listAll());

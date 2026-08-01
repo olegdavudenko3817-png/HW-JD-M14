@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c32fb942-9905-408e-83ca-d18091703a0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/todo/entity/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/HW_JD_M14/HwJdM14Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/todo/ToDoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/HW_JD_M14/crud/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/todo/crud/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/HW_JD_M14/crud/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/todo/crud/NoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW-JD-M14/src/main/java/com/example/HW_JD_M14/entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW-JD-M14/src/test/java/com/example/HW_JD_M14/HwJdM14ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW-JD-M14/src/test/java/com/example/todo/HwJdM14ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Spring Boot.ToDoApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ToDoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="com.example.HW-JD-M14.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.todo.ToDoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ToDoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package com.example.HW_JD_M14;
+package com.example.todo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
